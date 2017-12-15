@@ -24,18 +24,10 @@ function Timer() {
 
    }else{
       _sec_num--;
-
-      if(_sec_num <= 9){
-        _sec.innerHTML = '0' + _sec_num;
-      }else{
-        _sec.innerHTML = _sec_num;
-      }
-      if(_min_num <= 9){
-        _min.innerHTML = '0' + _min_num ;
-      }else{
-        _min.innerHTML = _min_num ;
-      }
-
+      if(_sec_num <= 9) _sec.innerHTML = '0' + _sec_num;
+      else _sec.innerHTML = _sec_num;
+      if(_min_num <= 9) _min.innerHTML = '0' + _min_num ;
+      else _min.innerHTML = _min_num ;
     }
 
 }, 1000);
